@@ -1,7 +1,10 @@
 import { Router } from "express";
-import { getUser } from "../controllers/Users.controller.js";
+import { getUser,addUser,deleteUser,editUser } from "../controllers/Users.controller.js";
 
  export const indexRouter=Router()
 
- indexRouter.get("/getAllUsers",getUser)
+ indexRouter.get("/users",getUser)
+ indexRouter.post("/users/add",addUser)
+ indexRouter.delete("/users/delete",deleteUser)
+ indexRouter.post("/users/edit",editUser)
 
