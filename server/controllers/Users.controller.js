@@ -1,5 +1,5 @@
 import { BankUsers } from "../models/user.models.js";
-// import { addUserToMongo } from "../services/users.mongoose.js";
+
 
 export const getUser = async (req, res) => {
   try {
